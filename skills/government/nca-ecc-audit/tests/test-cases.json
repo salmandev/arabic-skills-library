@@ -1,0 +1,91 @@
+{
+  "skill": "nca-ecc-audit",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "TC001",
+      "name": "Control 1-1 Strategy Assessment",
+      "name_ar": "تقييم استراتيجية الضابط ١-١",
+      "input": "Review our organization's cybersecurity policy document against NCA ECC Control 1-1 (Cybersecurity Strategy).",
+      "expected_sections": [
+        "Status (Compliant/Partially Compliant/Non-Compliant)",
+        "Risk Rating",
+        "Evidence Reviewed",
+        "Gap Analysis Table",
+        "Recommendations with Priority",
+        "Expected Compliance After Remediation"
+      ],
+      "compliance_domain": "1-1",
+      "language": "bilingual"
+    },
+    {
+      "id": "TC002",
+      "name": "Full Domain 1 Audit",
+      "name_ar": "مراجعة المجال ١ الكاملة",
+      "input": "Conduct a full NCA ECC Domain 1 (Cybersecurity Governance) audit for our Saudi government entity.",
+      "expected_sections": [
+        "Executive Summary in Arabic",
+        "Control 1-1 Assessment",
+        "Control 1-2 Assessment",
+        "Control 1-3 Assessment",
+        "Control 1-4 Assessment",
+        "Overall Domain Compliance Percentage",
+        "Prioritized Remediation Roadmap"
+      ],
+      "compliance_domain": "Domain-1",
+      "language": "bilingual"
+    },
+    {
+      "id": "TC003",
+      "name": "Patch Management SLA Check",
+      "name_ar": "فحص اتفاقيات مستوى خدمة إدارة التصحيحات",
+      "input": "Check if our patch management process complies with NCA ECC Control 2-3 vulnerability management SLAs.",
+      "expected_sections": [
+        "NCA ECC SLA Requirements (Critical: 72h, High: 1 week, Medium: 1 month, Low: 3 months)",
+        "Current Process Assessment",
+        "Gap Analysis",
+        "Compliance Status",
+        "Remediation Steps"
+      ],
+      "compliance_domain": "2-3",
+      "language": "bilingual"
+    },
+    {
+      "id": "TC004",
+      "name": "Cloud Security Data Residency",
+      "name_ar": "أمن الحوسبة السحابية وتوطين البيانات",
+      "input": "Review our cloud service provider agreement for NCA ECC Control 4-2 compliance, specifically data residency requirements for Saudi government data.",
+      "expected_sections": [
+        "Data Residency Requirements",
+        "Cloud Provider Agreement Review",
+        "Compliance Gaps",
+        "Recommendations for KSA Data Localization",
+        "Exit Strategy Assessment"
+      ],
+      "compliance_domain": "4-2",
+      "language": "bilingual"
+    },
+    {
+      "id": "TC005",
+      "name": "Incident Reporting Timeline",
+      "name_ar": "جدول زمني للإبلاغ عن الحوادث",
+      "input": "What are the NCA ECC incident reporting requirements for critical cybersecurity incidents?",
+      "expected_sections": [
+        "Critical Incident Definition",
+        "Reporting Timeline (24 hours)",
+        "Reporting Channel/Process",
+        "Required Information",
+        "Post-Incident Review Requirements"
+      ],
+      "compliance_domain": "3-3",
+      "language": "bilingual"
+    }
+  ],
+  "validation_rules": {
+    "must_cite_control_numbers": true,
+    "must_include_arabic_executive_summary": true,
+    "must_provide_remediation_recommendations": true,
+    "must_assign_risk_ratings": true,
+    "bilingual_output_required": true
+  }
+}
